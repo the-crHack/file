@@ -1,0 +1,144 @@
+[
+{
+  "id": "/subscriptions/e31502c3-b900-46a0-bb46-8b73df838618/resourceGroups/azurek/providers/Microsoft.Resources/deployments/user1",
+  "name": "user1",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/e31502c3-b900-46a0-bb46-8b73df838618/resourceGroups/azurek/providers/Microsoft.KeyVault/vaults/user1",
+    "marketplaceItemId": "Microsoft.KeyVault"
+  },
+  "properties": {
+    "templateHash": "8839448856804206090",
+    "parameters": {
+      "name": {
+        "type": "String",
+        "value": "user1"
+      },
+      "location": {
+        "type": "String",
+        "value": "southindia"
+      },
+      "sku": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "accessPolicies": {
+        "type": "Array",
+        "value": [
+          {
+            "objectId": "5f5e2bcd-19ea-4b33-9537-92d26851ae3a",
+            "tenantId": "d73a39db-6eda-495d-8000-7579f56d68b7",
+            "permissions": {
+              "keys": [
+                "Get",
+                "List",
+                "Update",
+                "Create",
+                "Import",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore",
+                "GetRotationPolicy",
+                "SetRotationPolicy",
+                "Rotate"
+              ],
+              "secrets": [
+                "Get",
+                "List",
+                "Set",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore"
+              ],
+              "certificates": [
+                "Get",
+                "List",
+                "Update",
+                "Create",
+                "Import",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore",
+                "ManageContacts",
+                "ManageIssuers",
+                "GetIssuers",
+                "ListIssuers",
+                "SetIssuers",
+                "DeleteIssuers"
+              ]
+            },
+            "applicationId": ""
+          }
+        ]
+      },
+      "tenant": {
+        "type": "String",
+        "value": "d73a39db-6eda-495d-8000-7579f56d68b7"
+      },
+      "enabledForDeployment": {
+        "type": "Bool",
+        "value": true
+      },
+      "enabledForTemplateDeployment": {
+        "type": "Bool",
+        "value": true
+      },
+      "enabledForDiskEncryption": {
+        "type": "Bool",
+        "value": true
+      },
+      "enableRbacAuthorization": {
+        "type": "Bool",
+        "value": false
+      },
+      "publicNetworkAccess": {
+        "type": "String",
+        "value": "Enabled"
+      },
+      "enableSoftDelete": {
+        "type": "Bool",
+        "value": true
+      },
+      "softDeleteRetentionInDays": {
+        "type": "Int",
+        "value": 90
+      },
+      "networkAcls": {
+        "type": "Object",
+        "value": {
+          "defaultAction": "allow",
+          "bypass": "AzureServices",
+          "ipRules": [],
+          "virtualNetworkRules": []
+        }
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2022-05-18T05:28:59.4528946Z",
+    "duration": "PT5.0811166S",
+    "correlationId": "5bea7406-658b-435b-882f-f1174c864842",
+    "providers": [
+      {
+        "namespace": "Microsoft.KeyVault",
+        "resourceTypes": [
+          {
+            "resourceType": "vaults",
+            "locations": [
+              "southindia"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "validationLevel": "Template"
+  }
+}
+]
